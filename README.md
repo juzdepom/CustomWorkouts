@@ -1,4 +1,32 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+# Custom Workouts
+
+Project started on Dec 31, 2019.
+
+Based off of this Laravel Youtube tutorial:
+[Laravel PHP Framework Tutorial](https://www.youtube.com/watch?v=ImtZ5yENzgE&t=252s)
+
+## Lessons Learned
+
+* Remember that for Laravel >=6 the command ```php artisan make:auth``` won’t work anymore. Instead you will need to follow this tutorial: https://stackoverflow.com/questions/34545641/php-artisan-makeauth-command-is-not-defined
+
+* php artisan serve was returning a ```500 Server Error``` so googled it an ran “composer update” again. That didn’t solve it. Turned out I need to <strong>rename the .env.example file to .env</strong> Then I got a new error that said “No application encryption key has been specified; Generate your application encryption key using <strong>php artisan key:generate.</strong>” Ran that and now everything is working fine.
+
+* Had to run ```composer update --no-scripts``` because typing “php artisan” was returning an error. That solved the problem.
+
+<strong>Updated Node and NPM</strong> with this article: https://www.hostingadvice.com/how-to/update-node-js-latest-version/
+
+<strong>What is artisan?</strong>
+Artisan is a command line tool that ships with Laravel that allows you to do a ton of different things with your application (especially artisan tinker)
+
+<strong>Before starting the project, what do you need to make sure you have</strong><br>
+- composer (dependency manager)
+- nodejs (so that we can use npm, which is the JavaScript counterpart to composer)
+- laravel installed (use composer for this)
+
+<strong>What is Laravel?</strong><br>
+Laravel is the fastest growing open source PHP framework to date.
+
+<hr>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
@@ -9,7 +37,7 @@
 
 ## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Laravel (this is a test) is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
